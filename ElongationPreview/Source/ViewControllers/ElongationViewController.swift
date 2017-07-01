@@ -83,7 +83,7 @@ open class ElongationViewController: SwipableTableViewController {
   /// Collapse expanded cell.
   ///
   /// - Parameter animated: should animate changing tableView's frame.
-  public func collapseCells(animated: Bool = true) {
+  open func collapseCells(animated: Bool = true) {
     for (path, state) in cellStatesDictionary where state {
       moveCells(from: path, force: false, animated: animated)
     }
